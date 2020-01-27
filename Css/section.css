@@ -1,0 +1,187 @@
+section
+{
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------
+                                                         CONTACT
+-----------------------------------------------------------------------------------------------------------------*/
+ 
+#afficherComponent
+{
+ 
+    transition: 0.3s ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+ .menuVert
+ {
+     min-height: 550px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 61, 114);
+    transition: 0.3s ease-in;
+ }
+ .menuVert .active
+ {
+     color: rgb(29, 113, 161);
+     font-weight: bold;
+      
+ }
+
+ .menuVert li 
+ {
+     line-height: 35px;
+     margin: 5px;
+ }
+
+ .menuVert li p:hover
+ {
+   
+     color: rgb(34, 7, 107);
+     cursor: pointer;
+ }
+ 
+ .menuVert  
+ {
+    
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+ }
+ .menuVert #close /*  Il est plcaer dans l'element N°2 */
+ {
+     position: absolute;
+     right: 5px;
+     top: 2px;
+    cursor: pointer;
+ }
+ .menuVert #close  i:hover
+ {
+ color: red;
+ transition: 0.3s ease-in;
+ }
+ .menuVert .lien
+ {
+   border-top: 1px solid black;
+ }
+
+ /*------------------------------------------------------------------------------------------- ADD-------------------*/
+
+.addFolder
+{
+    margin: 5px;
+    display: none;
+    animation-name: glisse;
+    animation-duration: 300ms;
+}
+.addFolder input
+{
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+ /*------------------------------------------------------------------------------------------------------------------*/
+ .photo
+ {
+    position: relative;
+    top: 0;
+    width: 78%;
+ }
+
+.photo ul 
+ {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: unset;
+     margin-bottom: 20px;
+     margin-left: 10px;
+ }
+
+.photo  ul li
+ {
+    width: 290px;
+    height: 160px;
+    margin: 5px;
+ }
+
+.photo ul li img
+ {
+    width: 100%;
+    height: 100%;
+ }
+ /*------------------------------------------------------------------------------------------------------------------*/
+ .photo_Info_content {
+    display: block;
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 100; /* Sit on top */
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     background-color: rgba(7, 2, 37, 0.849); /* Black w/ opacity */
+     filter: contrast(100%);
+   }
+ 
+ .photoInfo
+  {
+      background-color: yellow;
+      color: whitesmoke;
+      margin: auto;
+      width:  850px;
+      height: 450px;
+      margin-top: 20px;
+      margin-left: 320px;
+  }
+ 
+  .photoInfo img 
+  {
+      width: 100%;
+      height: 100%;
+  }
+
+  .menuInfoPhoto
+  {
+      height: 35px;
+      width:  850px;
+ 
+      position: relative;
+      left: 9%;
+      top: 10px;
+      margin: auto;
+      text-align: justify;
+  }
+  .menuInfoPhoto  #close ,#delete
+  {
+     font-size: 16px;
+     color: rgb(8, 30, 56);
+     position: absolute;
+     top: 2px;
+     left: 10px;
+     cursor: pointer;
+     width: 30px;
+     height: 30px;
+     background-color: rgb(230, 231, 235);
+     text-align: center;
+     line-height: 30px;
+     border-radius: 5px;
+     font-size: 12px;
+     
+  }
+  #close:hover
+  {
+    color: rgb(15, 47, 85);
+  }
+  #delete
+  {
+      left: 50px;
+  }
+  #delete:hover
+  {
+      color: red;
+      transition:  0.3s ease-in;
+  }

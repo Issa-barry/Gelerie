@@ -1,0 +1,63 @@
+
+/*-------------------------------------------------------------------------
+                                    MODALE
+--------------------------------------------------------------------------*/
+.modal {
+    display: block;
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     z-index: 100; /* Sit on top */
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     background-color: rgba(7, 2, 37, 0.849); /* Black w/ opacity */
+     filter: contrast(100%);
+   }
+   
+   /* Modal Content/Box */
+ .modal-content
+ {
+     background: #ffffff;
+     position: relative;
+     top: 80px;
+     margin: auto;
+     width: auto;
+     height: auto;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     overflow: hidden;
+     
+ }
+  
+ 
+ .MC_element 
+ {
+    width: 98%;
+    margin: 25px 2px;
+ }
+ 
+ #close  
+ {
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    right: 100px;
+    top: 26px;
+    cursor: pointer;
+ }
+ 
+ #open  
+ {
+   margin: 50px;
+   width: 300px;
+   height: 30px;
+   border: none;
+   color: rgb(97, 94, 95);
+   letter-spacing: 1px;
+   background-color: rgb(255, 255, 255);
+   display: none;
+ }
+ 

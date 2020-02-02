@@ -1,2 +1,0 @@
-# Galerie-d-image.
-# Galeri
